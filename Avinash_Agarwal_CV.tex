@@ -79,8 +79,8 @@
 \newcommand{\resumeSubheading}[4]{
 \vspace{1.5mm}\item[]
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1} & \textit{\footnotesize{#4}} \\
-        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+        \textbf{#1} & \footnotesize{#4} \\
+        \footnotesize{#3} &  \footnotesize{#2}\\
     \end{tabular*}
 \vspace{-1.5mm}
 }
@@ -93,8 +93,6 @@
     \end{tabular*}
     \vspace{-2.4mm}
 }
-
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
@@ -168,33 +166,34 @@
 
 \section{\Large{\textbf{Summary}}}
 \vspace{1mm}
-% \centering
-Inquisitive engineering veteran, with \textbf{8+ years of industry leading experience at Meta and Microsoft}, passionate about tackling civilizational challenges, especially Healthspan and Space exploration!
+Engineering veteran with \textbf{8+ years of industry leading experience at Meta and Microsoft}, passionate about tackling civilizational challenges, especially Healthspan and Space exploration! Proven track record of driving multi-million-dollar cost optimizations, architecting highly available distributed systems, and leading cross-functional engineering teams.
 
-% TODO: Wrap experiences, education, projects, and accomplishments into Credentials.
 \section{\Large{\textbf{Experiences}}}
 \resumeSubHeadingListStart
 \resumeSubheading
-      {\raisebox{-0.2em}{\Large{\includegraphics[height=1.0em]{MetaLogo.png}}} \large{\textbf{Meta}}}
-      {Menlo Park, California, USA}
+      {\raisebox{-0.2em}{\Large{\includegraphics[height=1.0em]{MetaLogo.png}}} \large{Meta}}{Menlo Park, California, USA}
       {Full-time}{August 2025 — Present}
 \resumeItemListStart
     \item \textbf{Applied AI \& LLM Evaluations:} \href{https://www.nytimes.com/2026/05/18/technology/meta-reassigns-7000-employees-ai.html}{Drafted into the Applied AI organization} to create model-evaluation tasks for Meta's next-gen LLM codenamed Avocado, under Meta's Superintelligence Labs.
-    \item \textbf{Strategic Cost Optimization:} Authored a comprehensive technical proposal for WhatsApp-based authentication, driving an architectural shift that is projected to save the company over \$30 million.
-    \item \textbf{Meta.ai Platform Reliability:} Stabilized cross-device login flows for the Meta.ai application by systematically resolving complex, intermittently failing test suites, significantly improving CI/CD reliability.
+    \item \textbf{AI for Healthspan:} Authored a visionary project proposal within the Applied AI org to process vast genetic datasets; Advancing milestones like Google's AlphaFold, the proposal leverages modern AI to establish novel health benchmarks and accelerate cures for aging, rare-diseases, etc.
+    \item \textbf{Strategic Cost Optimization:} Authored a comprehensive technical proposal for WhatsApp-based authentication, proposing an architectural shift that is projected to save the company over \$30 million.
+    \item \textbf{Meta.ai Platform Reliability:} Stabilized login flows for the Meta.ai application by systematically resolving complex, intermittently failing cross-platform test suites, significantly improving CI/CD reliability.
+    \item \textbf{Stability Lead}: Championed platform reliability operations by actively triaging and resolving critical alerts, identifying and filing tasks for key SLI/SLO coverage gaps, systemic propagation delays, etc.
+    \item \textbf{On-Call Operations:} Completed onboarding and actively participated in team on-call rotations to rapidly triage and mitigate incidents.
+    \item \textbf{Automated On-Call Agent:} Enhanced an alert summarizer agent by resolving prompt completeness errors; Collaborated directly with the company-wide On-Call platform owners to include this agent in their workflow, significantly improving engineering productivity.
     \item \textbf{Architecting Global Identity Systems:} Ensuring high-availability and security for identity systems processing billions of requests across the entire Meta ecosystem.
-    \item \textbf{Secured runners-up position in an internal Hackathon}, demonstrating high engineering velocity by rapidly triaging and fixing a high volume of improvements.
-    \item \textbf{Contributed to the development of a company-wide automated on-call agent}, significantly reducing manual triage time and improving engineering team productivity.
-    \item \textbf{AI for Healthspan at Meta Superintelligence Labs:} Spearheading technical advocacy and research to improve AI powered Health Benchmarks.
+    \item \textbf{Secured the runner-up position in an internal Hackathon:} Demonstrated high engineering velocity by rapidly fixing a high volume of issues while triaging improvements for the hackathon platform.
 \resumeItemListEnd
-\resumeSubheading{\raisebox{-0.2em}{\Large{\includegraphics[height=1.0em]{MicrosoftLogo.png}}} \large{\textbf{Microsoft Azure Core}}}{Redmond, Washington, USA}{Full-time}{Feb 2022 — July 2025}
+\resumeSubheading
+    {\raisebox{-0.2em}{\Large{\includegraphics[height=1.0em]{MicrosoftLogo.png}}} \large{Microsoft Azure Core}}{Redmond, Washington, USA}
+    {Full-time}{Feb 2022 — July 2025}
 \resumeItemListStart
     \item \href{https://learn.microsoft.com/en-us/azure/governance/resource-graph/overview}{\textbf{Azure Resource Graph}}
     \begin{itemize}[label=$\circ$, leftmargin=1em, itemsep=1.0mm]
-        \item Collaborated with Daniel Hu to migrate a streaming data pipeline (1B+ daily notifications) to its dedicated scale unit — Involved sophisticated design, careful cross-team planning and execution.
-        \item \textbf{Root-caused and advocated for increased hash cardinality} across the storage stack, leveraging data-driven demonstrations to significantly improve distribution granularity and resolve partition skewness.
-        \item \textbf{High-Performance Serialization:} Evaluated and advocated for the adoption of \textbf{System.Text.Json} across the service stack, leveraging its high-performance, low-allocation APIs to achieve significant reductions in CPU overhead and memory pressure during large-scale telemetry processing.
-        % Advocated for using dynamic caching of internal columns (instead of all) and Lucene based retrieval.
+        \item Collaborated across engineering teams to migrate a streaming data pipeline (1B+ daily notifications) to its dedicated scale unit — Involved sophisticated design, careful cross-team planning and execution.
+        \item \textbf{Root-caused and championed increasing hash cardinality} across the stack, leveraging data-driven demonstrations to significantly improve distribution granularity and resolve partition skewness.
+        \item \textbf{High-Performance Serialization:} Championed the adoption of \textbf{System.Text.Json} across the service stack, leveraging its high-performance, low-allocation APIs to achieve significant reductions in CPU overhead and memory pressure during large-scale telemetry processing.
+        \item \textbf{Memory Optimization:} Championed selective caching of internal columns informed by customer query telemetry to significantly reduce active memory footprint.
         \item \textbf{Engineered data ingestion components} hosted on the Azure Synapse platform to support dynamic time-window loading for security datasets.
         \item Optimized complex SQL queries executed on Azure Synapse to efficiently load and merge multiple continuous data streams.
         \item Profiled and optimized high-contention services eliminating bottlenecks and achieving \textbf{nearly 10\%} improvement in compute, memory and network efficiency.
@@ -211,28 +210,15 @@ Inquisitive engineering veteran, with \textbf{8+ years of industry leading exper
         \item Delivered General Availability for the Change Analysis front-end (\href{https://portal.azure.com/#view/Microsoft_Azure_OneInventory/ResourceChangesOverview.ReactView}{live on the Azure portal}) by improving \href{https://developer.chrome.com/docs/lighthouse/overview}{Lighthouse scores}, automating deployments and tests, completing A11y fixes etc.
         \item Closely collaborated with the Change Safety team to reference Change Analysis resources.
     \end{itemize}
-    \vspace{2mm}    
 \resumeItemListEnd
 
-\resumeSubheading{\Large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{MicrosoftLogo.png}}} \large{\textbf{Microsoft Azure Global}}}{Hyderabad, Telangana, India}{Full-time}{Feb 2022 — July 2025}
+\resumeSubheading
+{\Large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{MicrosoftLogo.png}}} \large{Microsoft Azure Global}}{Hyderabad, Telangana, India}
+{Full-time (supervised by \href{https://www.linkedin.com/in/arun-ramamurthi-8a77b3108/}{Arun Ramamurthi})}{Feb 2022 — July 2025}
 \resumeItemListStart
-\item \textbf{BCDR \& Global Traffic Management:} Designed and Implemented a mission-critical Business Continuity and Disaster Recovery architecture using \href{https://azure.microsoft.com/en-us/products/frontdoor}{Azure Front Door} (already benchmarked by LinkedIn), significantly improving page-load latencies, establishing a resilient global load-balancing layer and hardening the platform’s security posture for massive-scale international traffic.
-\vspace{1mm}
-\item \textbf{Strategic Architectural Leadership:} Formally advocated for \href{https://learn.microsoft.com/en-us/azure/lighthouse/overview}{Azure Lighthouse} over Azure Managed Applications to resolve cross-tenant visibility constraints; authored deep-dive technical evaluations demonstrating how Lighthouse’s automation via Azure Marketplace would have accelerated time to market and eliminated multi-tenant architectural debt for \textbf{ALL of Azure Global}.
-\vspace{1mm}
-\item \textbf{Identity \& Authentication:} Streamlined the SMS-based login flow by implementing custom Identity Server solutions over Azure Cosmos DB and closely collaborated with Telesign to significantly reduce SMS code-sending costs across many countries; Engineered workflows for load-testing authentication flows using locally signed JWT tokens.
-\item \textbf{Search Infrastructure \& Optimization:} Designed and implemented a custom search index featuring advanced schema optimizations and Lucene-based retrieval.
-\begin{itemize}[label=$\circ$, leftmargin=1.5em]
-    \item Used Azure Cognitive skills to maximize extropy; Indexed relevant content from unstructured file formats like PDF, Office, Videos, Audios, etc.
-    \item Used Azure Cognitive Search to improve search relevance with pretrained semantic analyzers like fuzzy matching, edit distance, synonyms, etc.
-    \item Added phonetic analyzers primarily for voice inputs.
-\end{itemize}
-\vspace{1mm}
-\item \textbf{Media Security \& DRM:} Authored a technical proposal to modernize content protection for temporal media using industry-standard \textbf{DRM protocols like Digital Rights Management)} including \textbf{Widevine, PlayReady, and FairPlay} beyond just AES-128 based encryption-in-transit.
-\vspace{1mm}
 \item \textbf{Scaling for GRAB (1B+ course completions)}
-\begin{itemize}[leftmargin=0.15in, label=\small$\circ$]
-    \item \textbf{Performance Profiling \& Load Testing:} Collaborated with \href{https://www.linkedin.com/in/kinshuksingh/}{Kinshuk Singh} to perform intensive load testing and performance profiling using Apache JMeter, ensuring platform stability for massive-scale deployments across Southeast Asia.
+\begin{itemize}[label=$\circ$, leftmargin=1em, itemsep=1.0mm]
+    \item \textbf{Performance Profiling \& Load Testing:} Performed intensive load testing and performance profiling using Apache JMeter, ensuring platform stability for massive-scale deployments across Southeast Asia.
     \item Identified and contributed a fix (\href{https://github.com/Azure-Samples/jmeter-aci-terraform/pull/77/changes/BASE..dfb24800cc5a1455b34c6943665ca9e94091b893}{GitHub Issue \#46}) for \href{https://learn.microsoft.com/en-us/azure/app-testing/load-testing/overview-what-is-azure-load-testing}{Azure Load Testing} + \href{https://developer.hashicorp.com/terraform}{Terraform} setup, effectively adding Azure-Load-Testing to the \href{https://registry.terraform.io/browse/providers}{multi-cloud cohort supported by Terraform};
     \item \textbf{System Optimization \& Throughput:} Optimized core services to achieve a \textbf{20x throughput improvement} by studying and refining SQL query execution plans, eliminating redundant network calls, and implementing strategic caching layers.
     \item \textbf{High-Scale Data Migration:} Architected APIs to execute the \textbf{migration of 160M+ course-completion records} from AWS to Azure ensuring data integrity during the transition.
@@ -242,38 +228,43 @@ Inquisitive engineering veteran, with \textbf{8+ years of industry leading exper
 \item \textbf{UNICEF Learning Passport (powered by Microsoft Community Training)}
 \vspace{2mm}
 \newline"Education is the ultimate 'Great Filter' prevention mechanism"
-\begin{itemize}[leftmargin=0.15in, label=\small$\circ$]
+\begin{itemize}[label=$\circ$, leftmargin=1em, itemsep=1.0mm]
     \item \textbf{Offline Innovation (Hackathon Lead):} Spearheaded a hackathon project to host the entire cloud service locally on Windows machines. The platform was recognized as one of \href{https://time.com/collection/best-inventions-2021/6112659/unicef-the-learning-passport/}{\textbf{TIME’s Best Inventions of 2021}} for providing continuous education to children in conflict zones and refugee settings.
     \item \textbf{Global Societal Impact:} This "offline-first" prototype was the key technical catalyst that prompted \textbf{UNICEF} to launch the initiative using Microsoft Community Training for no-connectivity regions, contributing to a high-scale initiative that reached \href{https://www.learningpassport.org/reports/january-june-2024-progress-report}{\textbf{7.4 million learners across 43 countries}} by 2024;
-    \item \textbf{Strategic Architectural Leadership:} Successfully advocated for, and worked on containerization and migration to \textbf{cross-platform .NET Core} in close collaboration with \href{https://www.linkedin.com/in/sanmoy/}{Sanmoy Ray}; this move was critical for the platform's ability to run on evolving hardware in emerging markets.
+    \item \textbf{Strategic Architectural Leadership:} Championed and worked on containerization and migration to \textbf{cross-platform .NET Core}; this move was critical for the platform's ability to run on evolving hardware in emerging markets.
     \item \textbf{Operational Support \& Edge Strategy:} Facilitated the integration of \textbf{Azure IoT Hub} to support remote management and observability for offline learning hubs; assisted in testing data-sync on diverse Linux-based hardware to ensure reliable curriculum delivery in remote field operations.
 \end{itemize}
 \vspace{2mm}
 \item \textbf{Swachh Bharat Mission (powered by Project Sangam)}
-  \begin{itemize}[leftmargin=0.15in, label=\small$\circ$]
+  \begin{itemize}[label=$\circ$, leftmargin=1em, itemsep=1.0mm]
     \item Directed an engineering team through the end-to-end implementation of key mobile features, culminating in the successful launch of the official \href{https://www.youtube.com/watch?v=IFN0Ux7T_qE}{Swachh Bharat Mission eLearning mobile app}.
-    \item Spearheaded the rapid triage of launch-critical issues in close collaboration with \href{https://scholar.google.com/citations?user=64Cgbv4AAAAJ&hl=en&oi=ao}{Aditya Agarwal} and PM teams to ensure a smooth migration of the training platform.
+    \item Spearheaded the rapid triage of launch-critical issues in close collaboration with \href{https://scholar.google.com/citations?user=64Cgbv4AAAAJ&hl=en&oi=ao}{Aditya Agarwal} and product management teams to ensure a smooth migration of the training platform.
     \item Architected and implemented a high-impact search-enabled dropdown to resolve a critical UI bug; this allowed users to efficiently navigate and select from \textbf{the hundreds of cities where the platform was deployed}.
     \item \textbf{Contributed to a high-scale social impact project} that successfully trained and empowered over \textbf{110,000+ municipal functionaries} across \textbf{4,000+ cities} in India.
   \end{itemize}
 \vspace{2mm}
-\vspace{3mm}
+\item \textbf{BCDR \& Global Traffic Management:} Designed and Implemented a mission-critical Business Continuity and Disaster Recovery architecture using \href{https://azure.microsoft.com/en-us/products/frontdoor}{Azure Front Door} (already benchmarked by LinkedIn), significantly improving page-load latencies, establishing a resilient global load-balancing layer and hardening the platform’s security posture for massive-scale international traffic.
+\vspace{1mm}
+\item \textbf{Strategic Architectural Leadership:} Formally championed \href{https://learn.microsoft.com/en-us/azure/lighthouse/overview}{Azure Lighthouse} over Azure Managed Applications to resolve cross-tenant visibility constraints; authored deep-dive technical evaluations demonstrating how Lighthouse’s automation via Azure Marketplace would have accelerated time to market and eliminated multi-tenant architectural debt for \textbf{ALL of Azure Global}.
+\vspace{1mm}
+\item \textbf{Identity \& Authentication:} Streamlined the SMS-based login flow by implementing custom Identity Server solutions over Azure Cosmos DB and closely collaborated with Telesign to significantly reduce SMS code-sending costs across many countries; Engineered workflows for load-testing authentication flows using locally signed JWT tokens.
+\item \textbf{Search Infrastructure \& Optimization:} Designed and implemented a custom search index featuring advanced schema optimizations and Lucene-based retrieval; Used Azure Cognitive skills to index relevant content from unstructured file formats like PDF, Office, Videos, Audios, etc. Used Azure Cognitive Search to improve search relevance with pretrained semantic analyzers like fuzzy matching, edit distance, synonyms, phonetics, etc.
+\vspace{1mm}
+\item \textbf{Media Security \& DRM:} Authored a technical proposal to modernize content protection for temporal media using industry-standard DRM protocols like Digital Rights Management including \textbf{Widevine, PlayReady, and FairPlay} beyond just AES-128 based encryption-in-transit.
+\vspace{1mm}
 \item \textbf{Platform Localization}
-    \begin{itemize}[leftmargin=0.15in, label=\small$\circ$]
+    \begin{itemize}[label=$\circ$, leftmargin=1em, itemsep=1.0mm]
+        \item Initially developed comprehensive support for \textbf{right-to-left (RTL) formats} before assuming full platform localization ownership.
         \item Spearheaded global accessibility by \textbf{engineering an internal localization framework} and integrating with manual translation pipelines.
         \item Initially developed comprehensive support for \textbf{right-to-left (RTL) formats} before assuming full platform localization ownership.
         \item Conducted a \textbf{comprehensive investigation on ligature support} to ensure accurate rendering of complex scripts across the ecosystem.
-        \item \textbf{Custom PDF Certification Engine:} Architected a templatized HTML-to-PDF generation feature by defining rigorous localization and security requirements; strategically collaborated with IronPDF to accelerate delivery while ensuring full support for complex scripts and global accessibility standards.
+        \item \textbf{Custom PDF Certification Engine:} Architected a templatized HTML-to-PDF generation feature by defining rigorous localization and security requirements; strategically collaborated with IronPDF to accelerate time to market.
     \end{itemize}
-\vspace{3mm}
-\item \textbf{Notifications Infrastructure}
-    \begin{itemize}[leftmargin=0.15in, label=\small$\circ$]
-        \item Initially onboarded via Xamarin consumption APIs before assuming full ownership of the platform’s notification subsystem, under the mentorship of \href{https://scholar.google.com/citations?user=sk-qH8wAAAAJ&hl=en&oi=ao}{Rohan Badlani}.
-    \end{itemize}
-\vspace{3mm}
+\vspace{1mm}
+\item \textbf{Notifications Infrastructure}: Onboarded via client-side Xamarin APIs before assuming full ownership of the platform’s notification subsystem (under the mentorship of \href{https://scholar.google.com/citations?user=sk-qH8wAAAAJ&hl=en&oi=ao}{Rohan Badlani})
 \item \textbf{High-Throughput Bulk Ingestion:} Architected and built an end-to-end bulk upload system enabling parallel ingestion of multi-format media; significantly reduced administrative onboarding time and \textbf{super-charged the manual testing experience} for everyone.
 \item \textbf{Developed a scalable monitoring infrastructure} using Event Hubs and Azure Data Explorer to centralize telemetry and enable diagnostic and analytic dashboards.
-\item \textbf{Automated end-to-end deployments and CI/CD pipelines} in close collaboration with {\href{https://www.linkedin.com/in/sukhjeevan-reddy-214883103/}{Sukhjeevan Reddy}}; enabling the Public Preview release on the Azure Marketplace.
+\item \textbf{Automated end-to-end deployments and CI/CD pipelines} enabling Public Preview release of the offering on Azure's Marketplace.
 \item \textbf{Advanced Thread Modeling:} Conducted deep-dive threat modeling and attack surface analysis using Microsoft internal security frameworks; ensuring the integrity of user data and platform content.
 \item \textbf{Privacy \& Compliance:} Enabled automated compliance tooling to automate the identification of secure, licensed dependencies; ensuring rigorous adherence to global data protection and privacy standards.
 \item \textbf{State Persistence \& User Analytics:} Developed features for real-time tracking of user progress, including "most recently viewed lesson" and "last watched timestamp" for temporal media content ensuring a seamless cross-device learning experience.
@@ -283,11 +274,11 @@ Inquisitive engineering veteran, with \textbf{8+ years of industry leading exper
 % \item \textbf{Delivered end-to-end features and bug fixes} spanning data layers, backend services, and frontend components.
 \resumeItemListEnd
 \resumeSubheading
-      {\Large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{MicrosoftLogo.png}}} \large{\textbf{Microsoft Hackathon}}}{Hyderabad, Telangana, India}
-      {Engineer}{June — 2018}
+      {\Large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{MicrosoftLogo.png}}} \large{Microsoft Hackathon}}{Hyderabad, Telangana, India}
+      {Engineer}{2018 — 2020}
 \resumeItemListStart
     \item \href{https://www.linkedin.com/posts/avinash-agarwal95_im-happy-to-share-this-kool-ald-for-gamers-activity-7268599791155109888-HSt-?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWJZ_sBE_eXkGyMdtycCf7TVs1e2l0iKmg}{Kool AI(d) for Gamers}: Fine-tuned pre-trained computer vision models to extract real-time HUD metrics and game states from live Dota 2 streams; Collaborated in a team of two.
-    \item \textbf{Koev Halev:} Actively contributed at the Microsoft IDC campus, providing first-person domain expertise in cross-functional design discussions for a project focused on behavioral health support.
+    \item \textbf{Koev Halev:} Actively contributed at the Microsoft IDC campus, providing domain expertise in cross-functional design discussions for a project focused on behavioral health support.
     % Green Cloud
     % Azure Oracle
     % Blockchain
@@ -295,54 +286,74 @@ Inquisitive engineering veteran, with \textbf{8+ years of industry leading exper
     % LLM based classification of resource properties
 \resumeItemListEnd
 \resumeSubheading
-    {\Large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{MicrosoftLogo.png}}} \large{\textbf{Microsoft Code.Fun.Do}}}{India}
+    {\Large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{MicrosoftLogo.png}}} \large{Microsoft Code.Fun.Do}}{India}
     {Engineering Lead and Pizza Logistics Moderator}{2018 — 2019}
 \resumeItemListStart
-    \item \textbf{Competitive Programming Strategy:} Advocated for structured programming contests to align internal technical standards with top-tier industry benchmarks.
-    % Gave talks in technical Code.Fun.Do seminars for onboarding, processes etc.
-    \item \textbf{Event Moderator:} Contributed to technical seminars and Pizza logistics at premier engineering institutes, including \textbf{NIT Surathkal} and \textbf{BITS Pilani (Hyderabad)}.
+    \item \textbf{Event Moderator:} Delivered talks on project-submissions, technical-guidelines etc. and managed ad-hoc troubleshooting and Pizza logistics at \textbf{NIT Surathkal} and \textbf{BITS Pilani (Hyderabad)}.
+    \item \textbf{Competitive Programming:} Proposed supplementing project-based events with structured programming contests (Google Kickstart, Google Code Jam, Meta Hacker Cup, ACM-ICPC, etc.), positioning rigorous algorithmic proficiency as a \textbf{foundational pillar for engineering talent.}
 \resumeItemListEnd
 \resumeSubheading
-      {\Large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{MicrosoftLogo.png}}} \large{\textbf{The Garage, Microsoft}}}{Hyderabad, Telangana, India}
-      {Engineer}{June — 2018}
+      {\Large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{MicrosoftLogo.png}}} \large{The Garage, Microsoft}}{Hyderabad, Telangana, India}
+      {Engineer}{June 2018}
 \resumeItemListStart
-    \item \textbf{IoT Home Automation:} Collaborated within a team to retrofit and wirelessly control legacy electric switches with motorized 3D-printed actuators via a non-invasive Raspberry-Pi based IoT layer.
+    \item \textbf{IoT Home Automation:} Collaborated within a team to retrofit and control legacy electric switches with motorized 3D-printed actuators via a Raspberry-Pi based IoT layer.
 \resumeItemListEnd
 \resumeSubheading
-      {\huge{\raisebox{-0.3em}{\includegraphics[height=1.0em]{GoldmanSachsLogo.png}}} \large{\textbf{Goldman Sachs}}}
+      {\Large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{GoldmanSachsLogo.png}}} \large{Goldman Sachs}}
       {Bengaluru, Karnataka, India}
-      {Part-time}{September 2016 — October 2016}
+      {Engineering Lead}{September 2016 — October 2016}
 \resumeItemListStart
-\item Led a 3-member team (ft. \href{https://www.linkedin.com/in/samiksha-gupta-56046588/}{Samiksha Gupta} and \href{https://www.linkedin.com/in/shivamtyagi95/}{Shivam Tyagi}) to secure a \textbf{national runner-up position} in the online round of GS Quantify 2016 — A highly competitive flagship event assessing advanced interdisciplinary capabilities in algorithmic problem-solving, predictive data-science, and quantitative trading strategies; Contributed to the final Bond-Liquidity-Prediction solution, earning a fully sponsored invitation to their Bengaluru headquarters (hosted at the prestigious Hilton Embassy), where the team delivered the concluding presentation.
+\item \textbf{National Runner-Up (GS Quantify 2016):} Led a 3-member team in this flagship interdisciplinary event, serving as the primary contributor for the advanced algorithmic problem-solving track.
+\item \textbf{Data Science} (ft. \href{https://www.linkedin.com/in/samiksha-gupta-56046588/}{Samiksha Gupta}): Contributed to the data-science track for bond-liquidity-prediction.
+\item \textbf{Quant} (ft. \href{https://www.linkedin.com/in/shivamtyagi95/}{Shivam Tyagi}): Directed the quantitative solution track to finalize the submission.
+\item \textbf{Executive Presentation:} Earned a fully sponsored invitation to their Bengaluru headquarters (hosted at the prestigious Hilton Embassy) where the team delivered the concluding presentation.
 \resumeItemListEnd
 \resumeSubheading
-      {\Large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{MicrosoftLogo.png}}} \large{\textbf{Microsoft Foundry}}}{Hyderabad, Telangana, India}
+      {\Large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{MicrosoftLogo.png}}} \large{Microsoft Foundry}}{Hyderabad, Telangana, India}
       {Engineering Internship}{May 2016 — July 2016}
 \resumeItemListStart
-    \item \textbf{Conversational AI:} Engineered chat-bots using the \textbf{Microsoft Bot Framework}, architecting custom conversational flows for automated form-filling.
-    \item \textbf{Collaborative Development:} Contributed to a high-impact project within a cross-functional team of \textbf{8 members}.   
-    \item \textbf{Computer Vision \& NLP:} Helped enhance OCR performance using \textbf{OpenCV} and test refined natural language experiences using \textbf{Microsoft LUIS}.
+    \item \textbf{Conversational AI:} Engineered chat-bots using the \textbf{Microsoft Bot Framework}, architecting custom conversational flows for automated form-filling, within a cross-functional team.
+    \item \textbf{Computer Vision:} Processed images using \textbf{OpenCV} to better highlight textual information, significantly improving downstream OCR engine performance.
+    \item \textbf{Natural Language Processing:} Tested and evaluated experiences built with \textbf{Microsoft LUIS}.
+    \item \textbf{Product Presentation:} Together with the team, delivered a highly acclaimed final product presentation to a large Microsoft Foundry audience.
 \resumeItemListEnd
 \resumeSubheading
-      {\Large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{XeroxLogo.png}}} \large{\textbf{Xerox Research Centre}}}{Bengaluru, Karnataka, India}
+      {\Large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{XeroxLogo.png}}} \large{Xerox Research Centre}}{Bengaluru, Karnataka, India}
       {Research Intern (AI/ML)}{Dec 2015 — Jan 2016}
 \resumeItemListStart
-\item \textbf{Xerox Research Innovation Challenge:} Engineered predictive neural network models using vitals data to forecast patient mortality and health complications among ICU patients.
-\item Worked on an ensemble of models to predict various health complications based on lab results.
+\item \textbf{Xerox Research Innovation Challenge:} Engineered predictive neural network models using vitals data to predict patient mortality and health complications among ICU patients.
+\item Worked on synthetic data generation and an ensemble of models to predict various health complications based on both vitals data and lab results.
 \item Completed a Winter School on predictive data-science under the supervision of \href{https://scholar.google.com/citations?user=rBqhP-8AAAAJ&hl=en}{Vaibhav Rajan}.
-\item Secured \textbf{third place} (online-round) and \textbf{seventh place} (onsite) in the challenge, alongside a 3-person team; successfully competing against advanced Ph.D. research teams.
+\item Secured \textbf{third place} (online-round) and \textbf{seventh place} (onsite) in the challenge, alongside a 3-person team; successfully competing against dedicated Ph.D. research teams.
 \resumeItemListEnd
 \resumeSubHeadingListEnd
+
+\section{\Large{\textbf{Accomplishments}}}
+\vspace{2mm}
+\resumeItemListStart
+\item \textbf{ACM ICPC 2016:} Qualified for and represented IIT (BHU), Varanasi at the Asia-Amritapuri regionals
+\item \textbf{ACM ICPC 2015:} Qualified for and represented IIT (BHU), Varanasi at the Asia-Amritapuri regionals
+\item Ranked \textbf{15th} internationally (2nd in India) in \textbf{Codeforces Round \#410 (Div. 2)}
+\item Ranked \textbf{83rd} internationally in \textbf{Google Kickstart Round D 2017}
+\item Ranked 41st in IIT Kanpur's Monthly Programming Contest in a team of 3 among 1117 other teams
+\item Ranked 16th on HackerEarth's October Sky among 800 international candidates
+\item Ranked 25th in IIT Bombay's TechFest-15 International Coding Challenge Final Round
+\item Ranked 12th in IIT Bombay's TechFest-15 International Coding Challenge Screening Round
+\item Ranked \textbf{19th nationally} in CodeChef May Challenge 2015, reaching an \textbf{overall India Rank of 31} in CodeChef's Long Challenge track.
+\item Reached an All India Rank of 15 in the prestigious CodeChef Long Challenge
+\item \textbf{IndiaHacks 2016} (ft. \href{https://www.linkedin.com/in/sartaj-singh-5ab461a5/}{Sartaj Singh}): Secured a \textbf{14th rank} against 3,000+ other teams in their data-science track; Invited to the on-site finals held at \textbf{Vivanta by Taj} in \textbf{Bengaluru, KA}
+\resumeItemListEnd
+
 \section{\Large{\textbf{Projects}}}
 \vspace{2mm}
 \resumeItemListStart
-    \item \textbf{2D Physics Game Engine:} A gravitational rigid-body simulation in Java.
-    \begin{itemize}
+    \item \textbf{2D Physics Game Engine:} A gravitational rigid-body simulation in Java:
+    \begin{itemize}[label=$\circ$, leftmargin=1em, itemsep=1.0mm]
         \item Engineered a physics engine featuring multi-object \textbf{collision detection and kinematic interactions}
         \item Engineered a \textbf{Near-Earth fixed-gravity model} to \href{https://www.youtube.com/watch?v=k_0ovq4Qi6c}{simulate realistic downward acceleration}.
         \item Engineered a \textbf{Newtonian $1/r^2$ gravity model} to simulate \textbf{N-body interactions} and \textbf{galactic mergers} in empty space.
     \end{itemize}
-    \item \textbf{Multi-Agent Environment Simulation:} Built a simulation independent agents coordinating with each other in a two dimensional grid.
+    \item \textbf{Multi-Agent Environment Simulation:} Built a simulation of independent RL-Agents coordinating with each other to efficiently collect items distributed in a two-dimensional grid.
     \item \textbf{AIMA-CSharp Open Source Contribution:} Contributed to the \href{https://github.com/aimacode/aima-csharp/commit/0a7003883f33a5781ffcb92e243fa9effee9fbba}{AIMA-CSharp repository} by implementing pseudo-code in C\# from Peter Norvig’s \textit{Artificial Intelligence: A Modern Approach}.
     \item \textbf{Image Steganography:} Implemented a system to encrypt and embed hidden messages within images.
 \item \textbf{Intel E5200 CPU Overclocking}: Successfully overclocked an Intel Pentium E5200 processor from a base clock of \textbf{2.5GHz} to \textbf{2.8GHz}. Involved tuning \textbf{FSB frequencies, CPU multipliers, and voltage settings}; Benchmarked thermal output and system stability under peak loads.
@@ -351,48 +362,62 @@ Inquisitive engineering veteran, with \textbf{8+ years of industry leading exper
 %\item \textbf{Rectifier:} 
 \resumeItemListEnd
 
+\section{\Large{\textbf{Skills}}}
+\vspace{2mm}
+\resumeItemListStart
+    \item \textbf{Leadership} — Prioritization, Cross-functional Collaboration, Reviews, Model, Coach, Care, etc.
+    \item \textbf{Artificial Intelligence} — Reinforcement Learning (Generative Adversarial Play, Exploration vs Exploitation, etc.), Deep Learning (Neural Networks, CNNs, RNNs, Transfer Learning, etc.), Machine Learning (Mathematical Modeling and Search Heuristics), Data Science (Statistics, Classification, Regression, PCA etc.), LLM Applications, etc.
+    \item \textbf{Engineering} — Business Continuity \& Disaster Recovery, Data Structures and Algorithms, Distributed Systems and High Performance Computing (Billions of daily notifications), Data Pipelines, Authentication and Identity Systems, Blockchain, API design and Smart Contracts, IaaC, etc.
+    \item \textbf{Security} — Ethical Hacking, Capture the Flag events, Threat Modeling, etc.
+    \item \textbf{Privacy} — Encryption, CCPA, GDPR, etc.
+    \item \textbf{Site Reliability} — Business Continuity and Disaster Recovery, On-call and Incident Response etc.
+    \item \textbf{Data \& Storage} — Redis, NoSQL, SQL, Blockchain, etc. 
+    \item \textbf{Search} — Apache Lucene, Elasticsearch etc.
+    \item \textbf{Cloud \& Infrastructure} — Microsoft Azure (Expert), AWS, Kubernetes, CDN, CI/CD \& Infrastructure Automation, etc.
+    \item \textbf{Frameworks \& Libraries} — JVM, .NET,  TensorFlow, Keras, Pandas, Scikit-learn, XGBoost, OpenCV, Unity, React, ARM, IronPDF, etc.
+    \item \textbf{Hardware} — Semiconductors, Assembly, Firmware, etc.
+    \item \textbf{Programming Languages} — Logo, Basic, Java, C, C++, C\#, Python, TypeScript, PowerShell, Hack, etc.
+    \item \textbf{Natural Languages} — English, Hindi, Sanskrit, Marwari, etc.
+    % \item \textbf{Divinity} — Love, Inquiry, Discipline, Enlightenment, Growth-mindset!
+    % Artist
+\resumeItemListEnd
+
 \section{\Large{\textbf{Education}}}
 \resumeSubHeadingListStart
 \resumeSubheading
-{\huge{\raisebox{-0.2em}{\includegraphics[height=1.0em]{IITBHULogo.jpg}}} \large{\textbf{Indian Institute of Technology (Banaras Hindu University)}}} {Varanasi, Uttar Pradesh, India}
+{\huge{\raisebox{-0.2em}{\includegraphics[height=1.0em]{IITBHULogo.jpg}}} \large{Indian Institute of Technology (Banaras Hindu University)}} {Varanasi, Uttar Pradesh, India}
 {Integrated Master's degree (5 years): Mathematics \& Computing}{July 2013 - May 2018}
 \resumeItemListStart
-\item \textbf{Thesis:} Deep Learning based Classification of Handwritten Mathematical Symbols \newline 
-(Supported by \href{https://scholar.google.com/citations?user=ZVw1nywAAAAJ&hl=en}{Tanmoy Som})
-\begin{itemize}
+\item \textbf{Thesis:} Deep Learning based Classification of Handwritten Mathematical Symbols. \newline 
+(Supervised by \href{https://scholar.google.com/citations?user=ZVw1nywAAAAJ&hl=en}{Tanmoy Som})
+\begin{itemize}[label=$\circ$, leftmargin=1em, itemsep=1.0mm]
 \item Trained and fine-tuned transfer learning models to achieve state-of-the-art accuracy on the HasyV2 dataset.
-% Gave comprehensive technical talk about the entire project while successfully defending the thesis.
-\item Tried using GPU instances on AWS for training transfer-learning models to predict complications in Chest X-Ray images.
-\item Technologies Used: Pandas, AWS, Numpy, Tensorflow, Keras, CNN, DenseNet,
-ResNet, Wide ResNet, NASNet, Scikit-learn, etc.
-
+\item Successfully defended thesis through a detailed technical presentation on CNNs, transfer-learning methodologies and classification results.
+\item Technologies Used: Pandas, AWS, Numpy, Tensorflow, Keras, CNN, MobileNet, DenseNet,
+ResNet, Wide-ResNet, NASNet, Scikit-learn, etc.
 \end{itemize}
-\item \textbf{Teaching Assistant} for the freshman course on \textbf{Mathematical Methods;}
-
-(Supervised by \href{https://scholar.google.com/citations?user=vl9B8rcAAAAJ&hl=en}{Manushi Gupta})
+\item \textbf{Teaching Assistant} for the freshman course on Mathematical Methods.
 \item \textbf{Problem Setter \& Moderator – Hackerrank (Technex'16):}
-\begin{itemize}
+\begin{itemize}[label=$\circ$, leftmargin=1em, itemsep=1.0mm]
     \item \textbf{Mathletics:} \url{www.hackerrank.com/mathletics-technex16}
     \item \textbf{Prayaas:} \url{www.hackerrank.com/prayaas-technex16}
 \end{itemize}
 \item \textbf{Ranked 1st in CodeDef-2016}, a coding contest organized under Udyam, a college festival organized by the Electronics branch.
 \item \textbf{Ranked 2nd in Analiticity}, a campus-wide data-science contest in Technex '16.
 \item \textbf{Ranked 1st in COPS-OPC-2015}, a programming contest organized by the club of programmers at IIT Varanasi.
-\item \textbf{Microsoft Code.Fun.Do} Collaborated with {\href{https://www.linkedin.com/in/sumit-sahrawat/}{Sumit Sahrawat}} in a team of 4, developing a 2D top-down space shooter game using the Unity game engine.
+\item \textbf{Microsoft Code.Fun.Do} Collaborated in a team of 4, developing a 2D top-down space shooter game using the Unity game engine.
 \item \textbf{Matheletics:} Ranked 3rd in the Mathematics and Computing event, in Technex-15.
-\item \textbf{Predicting Tourism Trends:} Participated in a team of 3 to build machine learning models to forecast tourism trends; Supervised by \href{https://scholar.google.com/citations?user=juei41UAAAAJ&hl=en}{Santwana Mukhopadhyay.})
+\item \textbf{Predicting Tourism Trends:} Participated in a team of 3 to build machine learning models to forecast tourism trends (Supervised by \href{https://scholar.google.com/citations?user=juei41UAAAAJ&hl=en}{Santwana Mukhopadhyay})
 \item \textbf{Rediscovering Darkness:} Stood 2nd in an Astronomy Quiz hosted by the Astronomy Club!
-\item \textbf{KashiYatra-14:} Runner's up in Treasure Hunt, participated in a team of 3 ft. Abhishek Bind and Arun Meena.
+\item \textbf{KashiYatra-14:} Runner's up in Treasure Hunt, participated in a team of 3.
 \item \textbf{The Chess Game:} Stood 2nd in Technex-14 Mod-Ex; Developed an evolving chess game from pre-college, featuring a chat room (UDP, TCP, etc.)
 \item \textbf{Robo-Soccer:} Runners-up out of 100+ teams at the Robotics-Club's Technex-13 event; conceptualized electronic circuit designs for a D-Pad controller to operate an All-Wheel-Drivetrain.
 \item \textbf{Event Organizer \& Moderator}: Competitive tournaments for Age of Empires, Rise of Nations, Call of Duty, Need for Speed, and Defense of the Ancients!
 \resumeItemListEnd
 
 \resumeSubheading
-    {\large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{CourseraLogo.png}}} \large{\textbf{Coursera.org}}}
-    {Online}
-    {Specializations and Certifications}
-    {April 2018 — March 2025}
+    {\large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{CourseraLogo.png}}} \large{Coursera.org}}{Online}
+    {Specializations and Certifications}{April 2018 — March 2025}
 \resumeItemListStart
 \item \textbf{DeepLearning.AI:} \href{https://coursera.org/share/2d10ec2a591cda666031851411f4246a}{Deep Learning Specialization}
 \item \textbf{University of Alberta \& Amii:} \href{https://coursera.org/share/d8a69cec04dba03f6a550ce434434e77}{Reinforcement Learning Specialization}
@@ -401,7 +426,7 @@ ResNet, Wide ResNet, NASNet, Scikit-learn, etc.
 \resumeItemListEnd
 
 \resumeSubheading
-{\large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{FIITJEELogo.png}}} \large{\textbf{Forum for IIT-JEE}} \label{sec:FIITJEE}} {Dhanbad, Jharkhand, India}
+{\large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{FIITJEELogo.png}}} \large{Forum for IIT-JEE} \label{sec:FIITJEE}} {Dhanbad, Jharkhand, India}
 {Joint Entrance Examination}{April 2011 — June 2013}
 \resumeItemListStart
 \item \textbf{All India Rank 494} in Joint Entrance Examination — 2013, among 1.3 million candidates.
@@ -410,7 +435,7 @@ ResNet, Wide ResNet, NASNet, Scikit-learn, etc.
 \resumeItemListEnd
 
 \resumeSubheading
-{\huge{\raisebox{-0.25em}{\includegraphics[height=1.0em]{DelhiPublicSchoolLogo.png}}} \large{\textbf{Delhi Public School}}} {Dhanbad, Jharkhand, India}
+{\huge{\raisebox{-0.25em}{\includegraphics[height=1.0em]{DelhiPublicSchoolLogo.png}}} \large{Delhi Public School}} {Dhanbad, Jharkhand, India}
 {Central Board of Secondary Education}{June 2011 — April 2013}
 \resumeItemListStart
     \item \textbf{Scored 96.5\%} in the All India Senior School Certificate Examination (AISSCE) — 2013!
@@ -424,67 +449,39 @@ ResNet, Wide ResNet, NASNet, Scikit-learn, etc.
 \resumeItemListEnd
 
 \resumeSubheading
-{\huge{\raisebox{-0.3em}{\includegraphics[height=1.0em]{DeNobiliSchoolLogo.jpg}}} \large{\textbf{De Nobili School, Sijua}}} {Dhanbad, Jharkhand, India}
+{\huge{\raisebox{-0.3em}{\includegraphics[height=1.0em]{DeNobiliSchoolLogo.jpg}}} \large{De Nobili School, Sijua}} {Dhanbad, Jharkhand, India}
 {Indian Certificate of Secondary Education}{March 2000 — March 2011}
 \resumeItemListStart
 \item \textbf{Scored 87.9 \%} in the Indian Certificate of Secondary Education — 2011 examination.
 \item \hyperref[sec:FIITJEE]{\textbf{Received 90\%+ in FTRE Scholarship}} based on competitive national-level performance among 100,000+ candidates!
-\item \textbf{Practicals:} Physical Training, Art \& Craft (Origami), Reading, Speaking, Writing, Spell-check, Computers, Chemistry, Biology, Physics, Topology, etc.
+\item \textbf{Practicals:} Reading, Speaking, Writing, Physical-Training, Art \& Craft, Computers, Chemistry, Biology, Physics, Topology, etc.
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-\section{\Large{\textbf{Accomplishments}}}
-\vspace{2mm}
-\resumeItemListStart
-\item \textbf{ACM ICPC 2016:} Qualified for and represented IIT (BHU), Varanasi at the Asia-Amritapuri regionals (ft. Umange Goel and Himadri Mishra)
-\item Ranked \textbf{15th} internationally (2nd in India) in \textbf{Codeforces Round \#410 (Div. 2)}
-\item \textbf{ACM ICPC 2015:} Qualified for and represented IIT (BHU), Varanasi at the Asia-Amritapuri regionals (ft. Shivam Tyagi and Aditya Kapoor)
-\item Ranked \textbf{83rd} internationally in \textbf{Google Kickstart Round D 2017}
-\item Ranked 41st in IIT Kanpur's Monthly Programming Contest in a team of 3 (ft. Abhishek Bind and Rishabh Daal) among 1117 other teams
-\item Ranked 16th on HackerEarth's October Sky among 800 international candidates
-\item Ranked 25th in IIT Bombay's TechFest-15 International Coding Challenge Final Round
-\item Ranked 12th in IIT Bombay's TechFest-15 International Coding Challenge Screening Round
-\item Ranked \textbf{19th nationally} in CodeChef May Challenge 2015, reaching an \textbf{overall India Rank of 31} in CodeChef's Long Challenge track.
-\item Reached an All India Rank of 15 in the prestigious CodeChef Long Challenge
-\item \textbf{IndiaHacks 2016 (ft. \href{https://www.linkedin.com/in/sartaj-singh-5ab461a5}{Sartaj Singh}):} Secured a \textbf{14th rank} against 3,000+ other teams in their data-science track; Invited to the on-site finals held at \textbf{Vivanta by Taj} in \textbf{Bengaluru, KA}
-\resumeItemListEnd
-
-\section{\Large{\textbf{Skills}}}
-\vspace{2mm}
-\resumeItemListStart
-    \item Divinity — Love, Inquiry, Discipline, Enlightenment, Knowledge is Parallel!
-    \item Leadership — Cross-functional Collaboration, Reviews, Model, Coach, Care, etc.
-    \item Programming Languages — Logo, Basic, Java, C, C++, C\#, Octave, Python, TypeScript, PowerShell, Hack, etc.
-    \item \textbf{Artificial Intelligence} — Reinforcement Learning (Generative Adversarial Play, Exploration vs Exploitation, etc.), Deep Learning (Neural Networks, CNNs, RNNs, Transfer Learning, etc.), Machine Learning (Mathematical Modeling and Search Heuristics), Data Science (Statistics, Classification, Regression, PCA etc.), LLM Applications, etc.
-    \item \textbf{Engineering} — Business Continuity \& Disaster Recovery, Data Structures and Algorithms, Distributed Systems and High Performance Computing (Billions of daily notifications), Data Pipelines, Authentication and Identity Systems, Blockchain, API design and Smart Contracts, IaaC, etc.
-    \item Security — Ethical Hacking, Capture the Flag events, Threat Modeling, etc.
-    \item Privacy — Encryption, CCPA, GDPR, etc.
-    \item Site Reliability — Business Continuity and Disaster Recovery, On-call and Incident Response etc.
-    \item \textbf{Data \& Storage:} — Redis, NoSQL, SQL, Blockchain, etc. 
-    \item \textbf{Search:} Apache Lucene, Elasticsearch etc.
-    \item \textbf{Cloud \& Infrastructure:} — Microsoft Azure (Expert), AWS, Kubernetes, CDN, CI/CD \& Infrastructure Automation, etc.
-    \item \textbf{Frameworks \& Libraries:} — JVM, .NET,  TensorFlow, Keras, Pandas, Scikit-learn, XGBoost, OpenCV, Unity, React, ARM, IronPDF, etc.
-    \item \href{https://youtu.be/Hi2tjMLVpdQ}{\textbf{Hardware}} — Semiconductors, Assembly, Firmware, etc.
-    \item Natural Languages — English, Hindi, Sanskrit, Marwari, etc.
-    \item \textbf{Philosophy:} — Ontology, Epistemology, Causality, Agency, Teleology, Teleonomy, etc.
-    % Skills - Artist, Discipline, Medicine, Correspondent, News-reporter, Editor, Business, Law
-\resumeItemListEnd
 \section{\Large\textbf{Pursuits}}
 \vspace{2mm}
 \resumeItemListStart
-    \item Metaverse — Spatial Computing, AR/VR, WIP!
-    \item Science — Medicine, Anatomy, Hardware Assembly, Theoretical Physics, WIP!
-    \item Multiverses — MMORPG, RTS, FPS, Podcasts, Documentaries, \href{https://www.goodreads.com/user/show/58972890-avinash-agarwal}{Books}, \href{https://myanimelist.net/animelist/manu4rhyme}{Anime}, WIP!
-    \item Music — Rock, Pop, EDM, MeaningWave, LoFi, Rap, etc.
-    \item Guitar — Beginner (Eartuning, Staff Notation, Electric, Yousician, etc.)
-    \item Foodie — Moderate!
-    \item Cooking — Beginner!
-    \item Badminton — Beginner!
-    \item Swimming — Newbie!
-    \item Traveling — Stars, NASA, SpaceX, Amazon Leo, Auroras, Universities, Museums, Monuments, etc.
-    \item Languages — Mandarin, Spanish, Punjabi, Korean, Tamil, Japanese!
+    \item \textbf{Metaverse} — Spatial Computing, AR/VR, WIP!
+    \item \textbf{Science} — Medicine, Anatomy, Hardware Assembly, Theoretical Physics, WIP!
+    \item \textbf{Multiverses} — MMORPG, RTS, FPS, Podcasts, Documentaries, \href{https://www.goodreads.com/user/show/58972890-avinash-agarwal}{Books}, \href{}{Anime}, WIP!
+    \item \textbf{Music} — Rock, Pop, EDM, MeaningWave, LoFi, Rap, etc.
+    \item \textbf{Guitar} — Beginner (Eartuning, Staff Notation, Electric, Yousician, etc.)
+    \item \textbf{Foodie} — Moderate!
+    \item \textbf{Cooking} — Beginner!
+    \item \textbf{Badminton} — Beginner!
+    \item \textbf{Swimming} — Newbie!
+    \item \textbf{Traveling} — Stars, NASA, SpaceX, Amazon Leo, Auroras, Universities, Museums, Monuments, etc.
+    \item \textbf{Philosophy} — Ontology, Epistemology, Causality, Agency, Teleology, Teleonomy, etc.
+    \item \textbf{Natural Languages} — Mandarin, Spanish, Punjabi, Korean, Tamil, Japanese!
+    % Learning - Medicine, Business
     % \item \textbf{Lex Fridman:} \href{https://lexfridman.com/}{AI, Blockchain, Science, Philosophy, Mortality, etc.}
     % \item \textbf{Jordan B. Peterson:} \href{https://www.jordanbpeterson.com/}{Maps of Meaning, Beyond Dualism, Psychotherapy, Philosophy, WWWWG, etc.}
+    % \item Awakening —
+    %Sleep, \href{https://open.spotify.com/track/3S4px9f4lceWdKf0gWciFu?%si=Z59ANUp0T3KeX5DiyxaxIQ}{Cheap Thrills},
+    %\href{https://www.isrpsych.org/pagina-nueva-1-1-2-1-1-1-1-1-1-1-1-1-2-1}{Psychedelics},
+    %\href{https://questketamineclinics.com/}{Ketamine!}
+    %\item Immortality — Philosophy, Mathematics, Biology, Physics, Chemistry, etc.
+    %\item Comedy — Bill Maher, Stephen Colbert, Hasan Minhaj, Trevor Noah, Joe Rogan, Dave Chappelle, etc.
     % Sixty Symbols
     % Numberphile
     % Veritasium
@@ -496,11 +493,14 @@ ResNet, Wide ResNet, NASNet, Scikit-learn, etc.
     % MythBusters
     % Man vs Wild
     % Ancient Aliens
-    %\item Awakening —
-    %Sleep, \href{https://open.spotify.com/track/3S4px9f4lceWdKf0gWciFu?%si=Z59ANUp0T3KeX5DiyxaxIQ}{Cheap Thrills},
-    %\href{https://www.isrpsych.org/pagina-nueva-1-1-2-1-1-1-1-1-1-1-1-1-2-1}{Psychedelics},
-    %\href{https://questketamineclinics.com/}{Ketamine!}
-    %\item Immortality — Philosophy, Mathematics, Biology, Physics, Chemistry, etc.
-    %\item Comedy — Bill Maher, Stephen Colbert, Hasan Minhaj, Trevor Noah, Joe Rogan, Dave Chappelle, etc.
 \resumeItemListEnd
+
+% \section{\Large\textbf{Personal}}
+% \vspace{2mm}
+% \resumeItemListStart
+%     \item Sangeeta Jiloka
+%     \item Raj Kumar Agarwal
+%     \item Parul Aggarwal
+% \resumeItemListEnd
+
 \end{document}
