@@ -11,6 +11,12 @@
 \usepackage{array} % for \newcolumntype and \arraybackslash
 \usepackage{titlesec}
 \usepackage{geometry}
+\geometry{
+    top=0.4in,
+    bottom=0.4in,
+    left=0.4in,
+    right=0.4in,
+}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage{multicol}
@@ -28,7 +34,6 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
 \setlength{\footskip}{5pt} % Addressing fancyhdr warning
 
 % Hyperlink setup (moved after fancyhdr to address warning)
@@ -136,29 +141,16 @@
 \headerfontiii
 
 % Header
+\vspace{-9mm}
 \begin{center}
-    {\Huge\textbf{Avinash Agarwal}}
-\end{center}
-
-\begin{center}
-    \small{
-    Civilization, AI, Healthspan, Cosmos
-    }
-\end{center}
-
-\begin{center}
-    \small{
-    Mathematics | Engineering | Superintelligence | Systems
-    }
-\end{center}
-
-\begin{center}
-    \small {
-        \href{https://wa.me/14254480609}{\socialicon{\faWhatsapp} +1-425-448-0609} |
-        \href{https://www.linkedin.com/in/avinash-agarwal95/}{\socialicon{\faLinkedin} avinash-agarwal95}  |  
-        \href{mailto:manu3rhyme@gmail.com}{\socialicon{\faEnvelope} manu3rhyme@gmail.com}  |
-        \href{https://github.com/manu4rhyme}{\socialicon{\faGithub} manu4rhyme}    
-    }
+    {\Huge \textbf{Avinash Agarwal}} \\[8pt]
+    \large
+    Civilization, AI, Healthspan, Cosmos \\[8pt]
+    Mathematics \ $|$ \ Engineering \ $|$ \ Superintelligence \ $|$ \ Systems \\[8pt]
+    \href{https://wa.me/14254480609}{\socialicon{\faWhatsapp} +1-425-448-0609} \ $|$ \ 
+    \href{mailto:manu3rhyme@gmail.com}{\socialicon{\faEnvelope} manu3rhyme@gmail.com} \ $|$ \ 
+    \href{https://www.linkedin.com/in/avinash-agarwal95/}{\socialicon{\faLinkedin} avinash-agarwal95} \ $|$ \ 
+    \href{https://github.com/manu4rhyme}{\socialicon{\faGithub} manu4rhyme}
 \end{center}
 
 \fontfamily{phv}\selectfont
@@ -183,6 +175,7 @@ Engineering veteran with \textbf{8+ years of industry leading experience at Meta
     \item \textbf{Automated On-Call Agent:} Enhanced an alert summarizer agent by resolving prompt completeness errors; Collaborated directly with the company-wide on-call platform owners to include this agent in their workflow, significantly improving engineering productivity (w/ \href{https://www.linkedin.com/in/nanwaychen/}{Nanway Chen})
     \item \textbf{On-Call Operations \& Incident Management:} Completed specialized onboarding; monitored dashboards, triaged alerts, completed reports, proactively root-caused a privacy anomaly, and collaborated with relevant owners to improve time-to-mitigate and prevent future outages.
     \item \textbf{Secured the runner-up position in an internal Hackathon:} Demonstrated high engineering velocity by rapidly fixing a high volume of issues while triaging improvements for the hackathon platform.
+    \item \textbf{Dogfooding \& Virtualization:} Supported on-device dogfooding for unified login flows (w/ \href{https://www.linkedin.com/in/nanwaychen/}{Nanway Chen}) and ramped-up on internal virtualization frameworks for testing most scenarios virtually (w/ \href{https://www.linkedin.com/in/fengwan/}{Feng Wan})
     \item \textbf{Global Identity Architecture \& Execution:} Led the end-to-end design and implementation of 8+ distinct account-recovery eligibility methods; Instrumented relevant telemetry validating the safe transitioning of billions of requests across the Meta ecosystem (w/ \href{https://www.linkedin.com/in/zach-yang-b0813a152/}{Zach Yang} \& \href{https://www.linkedin.com/in/fengwan/}{Feng Wan})
     \item \textbf{Observability \& Quota Management:} Audited telemetry sources to resolve persistent capacity issues; optimized sampling rates and created distinct logging partitions for partner teams (w/ \href{https://www.linkedin.com/in/mayankchacko/}{Mayank Chacko})
     \item \textbf{Privacy-Safe Infrastructure:} Modernized legacy components to use privacy-safe wrappers while onboarding to the unified authentication infrastructure team.
@@ -197,24 +190,31 @@ Engineering veteran with \textbf{8+ years of industry leading experience at Meta
 \resumeItemListStart
     \item \href{https://learn.microsoft.com/en-us/azure/governance/resource-graph/overview}{\textbf{Azure Resource Graph}}
     \begin{itemize}[label=\tiny$\circ$, leftmargin=1em, itemsep=1.0mm]
+        \item \textbf{Engineered data ingestion components} hosted on the Azure Synapse platform to support dynamic time-window loading for security datasets (w/ \href{https://www.linkedin.com/in/sanjaiganesh/}{Sanjai Ganesh Jeenagiri} \& \href{https://www.linkedin.com/in/um1900/}{Umair A.})
+        \item \textbf{SQL Query Optimization:} Optimized complex queries executed on Azure Synapse to efficiently load and merge concurrent incoming data streams. (w/ \href{https://www.linkedin.com/in/sanjaiganesh/}{Sanjai Ganesh Jeenagiri}, \href{https://www.linkedin.com/in/svsivaraman/}{Sivaraman Venkataraman}, \href{https://www.linkedin.com/in/abhinavgupta16/}{Abhinav Gupta}, etc.)
         \item \textbf{Championed increasing partition-key cardinality}, leveraging data-driven demonstrations to root-cause and resolve systemic skewness across the entire stack (w/ \href{https://www.linkedin.com/in/jfang7/}{Jing Fang})
         \item \textbf{High-Performance (de)serialization:} Independently root-caused bottlenecks via profiler analysis and championed the stack-wide adoption of \texttt{System.Text.Json}, leveraging its faster, lower-allocation APIs to optimize payload processing at scale (w/ \href{https://www.linkedin.com/in/john-call-4a77b99b/}{John Call})
-        \item \textbf{Memory Optimization:} Championed selective caching of internal columns informed by customer query telemetry to significantly reduce active memory footprint.
-        \item \textbf{Engineered data ingestion components} hosted on the Azure Synapse platform to support dynamic time-window loading for security datasets (w/ \href{https://www.linkedin.com/in/sanjaiganesh/}{Sanjai Ganesh Jeenagiri})
-        \item \textbf{SQL Query Optimization:} Optimized complex queries executed on Azure Synapse to efficiently load and merge multiple continuous data streams.
-        \item \textbf{Profiled and optimized services} eliminating contention bottlenecks and achieving \textbf{nearly 10\%} improvement in compute, memory and network efficiency.
-        \item \textbf{On-Call Efficiency:} Improved on-call operations with multiple enhancements to internal monitors, documentations, etc.
+        \item \textbf{Memory Optimization:} Designed and implemented buffered hashing to substantially reduce active memory footprint when processing massive strings, while preserving existing encryption algorithms and downstream compatibility (w/ \href{https://www.linkedin.com/in/alanyang1994/}{Alan Yang}, \href{https://www.linkedin.com/in/john-call-4a77b99b/}{John Call}, \& \href{https://www.linkedin.com/in/olha-tkachenko-8b2b28109/}{Olha Tkachenko})
+        \item \textbf{Telemetry \& Partition Observability:} Instrumented partition-specific metadata and targeted diagnostic columns across Event Hub ingestion streams, substantially improving debuggability and root-cause analysis for critical partition-level anomalies (w/ \href{https://www.linkedin.com/in/olha-tkachenko-8b2b28109/}{Olha Tkachenko})
+        \item \textbf{Profiled and optimized services} eliminating contention bottlenecks and achieving nearly 10\% improvement in compute, memory and network efficiency.
+        \item \textbf{On-Call Efficiency:} Improved on-call operations with multiple enhancements to internal monitors, documentations, etc. (w/ 
+        \href{https://www.linkedin.com/in/pooja-narayanan-sivagaminathan/}{Pooja Narayanan},
+        \href{https://www.linkedin.com/in/pinwen-su/}{Pinwen Su},
+        \href{https://www.linkedin.com/in/monica-m-64077aa6/}{Monica Mihailescu},  etc.)
     \end{itemize}
     \vspace{2mm}    
     \item {\href{https://learn.microsoft.com/en-us/azure/governance/resource-graph/changes/resource-graph-changes}{\textbf{Azure Resource Change Analysis}}}
     \begin{itemize}[label=\tiny$\circ$, leftmargin=1em, itemsep=1.0mm]
+    \item \textbf{Streaming Pipeline (1B+ daily notifications) Migration:} Contributed to an approved transitioning design-doc and drove foundational execution steps for migrating the high-throughput streaming data pipeline for Change Analysis to it's dedicated scale unit (w/ \href{https://www.linkedin.com/in/abhinavgupta16/}{Abhinav Gupta}, \href{https://www.linkedin.com/in/harkirat-singh-59734512/}{Harkirat Singh} \& \href{https://www.linkedin.com/in/dhu5432/}{Daniel Hu})
+    \item \textbf{Change Safety Integration:} Guided partner teams on integrating with Change Analysis resources, authoring and deploying API/Swagger specifications while reviewing inbound pull requests to ensure cross-stack architectural safety (w/ \href{https://www.linkedin.com/in/ayazali/}{Ayaz Ali} \& \href{https://www.linkedin.com/in/bharath-kalidindi-ab20a4107/}{Bharath Kalidindi})
+    \item \textbf{Front-End General Availability:} Worked on improving \href{https://developer.chrome.com/docs/lighthouse/overview}{performance Lighthouse} scores, deployments and test automation, completing accessibility fixes, etc. (w/ \href{https://www.linkedin.com/in/hardhik/}{Hardhik Mallipedi}, \href{https://www.linkedin.com/in/zhonghua-bao-b84146172/}{Zhonghua Bao} \& \href{https://www.linkedin.com/in/juliamwang/}{Julia Wang})
+    \item \textbf{Proxy Resource Change Tracking:} Contributed to the design and deployment of Change Analysis backend services for Azure proxy resources, expanding auditing coverage and closing visibility gaps across nested topologies (w/ \href{https://www.linkedin.com/in/dhu5432/}{Daniel Hu})
+    \item \textbf{Change Actor General Availability}: Designed and presented a comprehensive design doc on a \href{https://techcommunity.microsoft.com/blog/azuregovernanceandmanagementblog/announcing-the-general-availability-of-change-actor/4171801}{new compliance and auditing functionality enabling customers to audit} WHO initiated a change and WHICH client interface (Portal, CLI, SDK, etc.) was used to make these changes (w/ \href{https://www.linkedin.com/in/aydan-yumerefendi-631514/}{Aydan Yumerefendi}). Drove end-to-end implementation, cross-team collaboration and project completion (w/ \href{https://www.linkedin.com/in/virat-satyam-58498320/}{Virat Satyam}, \href{https://www.linkedin.com/in/amit-dua-2ab50b4/}{Amit Dua}, \& \href{https://www.linkedin.com/in/dhu5432/}{Daniel Hu})
+    \item \textbf{Architectural Evolution:} Championed selective caching of internal columns informed by customer query telemetry (w/ \href{https://www.linkedin.com/in/hardhik/}{Hardhik Mallipedi}) to significantly reduce active memory footprint; Worked on end-to-end removal of nullable fields, ensuring data integrity and API/Swagger contract migration to dramatically reduce footprint under strict resource constraints (w/ \href{https://www.linkedin.com/in/jaeyoung-yoon-99a59010/}{Jaeyoung Yoon})
+    \item \textbf{Partition Skewness Reduction:} Optimized data-ingestion pipelines, achieving over 30\% improvement in compute, memory and network efficiency (w/ \href{https://www.linkedin.com/in/jfang7/}{Jing Fang})
+    \item \textbf{Fast-Path Rollout:} Contributed to the design and staged rollout of fast-path execution pipelines for Change Analysis, unlocking massive throughput improvements; authored extensive test suites to ensure correctness, before full rollout (w/ \href{https://www.linkedin.com/in/jaeyoung-yoon-99a59010/}{Jaeyoung Yoon})
     \item \textbf{Backend General Availability:} Deployed relevant services, dependencies, etc. across US and China Government clouds, partnered with authorized personnel for sovereign air-gapped environments, achieving critical compliance milestones directly supporting Azure's enterprise market positioning.
-    \item \textbf{Partition Skewness Reduction:} Optimized data-ingestion pipelines, achieving over 30\% improvement in compute, memory and network efficiency.
-    \item \textbf{Architectural Evolution:} Championed metadata enhancements and optimizations to the Change Analysis payload with extensive collaboration across teams and disciplines.
-    \item \textbf{Change Actor General Availability}: Delivered a \href{https://techcommunity.microsoft.com/blog/azuregovernanceandmanagementblog/announcing-the-general-availability-of-change-actor/4171801}{new compliance and auditing functionality enabling customers to audit} WHO initiated a change and WHICH client interface (Portal, CLI, SDK, etc.) was used to make these changes.
-    \item \textbf{Front-End General Availability:} Worked on improving \href{https://developer.chrome.com/docs/lighthouse/overview}{performance Lighthouse} scores, deployments and test automation, completing accessibility fixes, etc. (w/ \href{https://www.linkedin.com/in/hardhik/}{Hardhik Mallipedi} \& \href{https://www.linkedin.com/in/zhonghua-bao-b84146172/}{Zhonghua Bao})
-    \item \textbf{Change Safety Collaboration:} Provided technical guidance to a partner team around effectively integrating and referencing Change Analysis resources within their workflows.
-    \item \textbf{Streaming Pipeline (1B+ daily notifications) Migration:} Authored an approved architectural design-doc and drove the foundational execution steps for migrating the high-throughput streaming data pipeline for Change Analysis to it's dedicated scale unit (w/ \href{https://www.linkedin.com/in/abhinavgupta16/}{Abhinav Gupta} \& \href{https://www.linkedin.com/in/dhu5432/}{Daniel Hu})
+    \item \textbf{On-Call Efficiency:} Improved on-call operations with multiple enhancements to internal monitors, documentations, etc. (w/ \href{https://www.linkedin.com/in/abhinavgupta16/}{Abhinav Gupta}, \href{https://www.linkedin.com/in/dhu5432/}{Daniel Hu} \& \href{https://www.linkedin.com/in/jaeyoung-yoon-99a59010/}{Jaeyoung Yoon})
 \end{itemize}
 \resumeItemListEnd
 
@@ -225,7 +225,7 @@ Engineering veteran with \textbf{8+ years of industry leading experience at Meta
 \resumeItemListStart
 \item \textbf{Scaling for Large Enterprise Customers}
 \begin{itemize}[label=\tiny$\circ$, leftmargin=1em, itemsep=1.0mm]
-    \item \textbf{Performance Profiling \& Load Testing:} Performed load testing and performance profiling using Apache JMeter, ensuring platform stability for massive-scale deployments (1B+ course-completions)
+    \item \textbf{Performance Profiling \& Load Testing:} Performed load testing and performance profiling using Apache JMeter, ensuring platform stability for massive-scale deployments totaling 1B+ course-completions (verified by \href{https://www.linkedin.com/in/garimakamthan/}{Garima Kamthan})
     \item \textbf{Azure Load Testing \& Terraform:} Identified and merged \href{https://github.com/Azure-Samples/jmeter-aci-terraform/pull/77/changes/BASE..dfb24800cc5a1455b34c6943665ca9e94091b893}{a fix} significantly improving \href{https://learn.microsoft.com/en-us/azure/app-testing/load-testing/overview-what-is-azure-load-testing}{Azure-Load-Testing}'s support in the \href{https://registry.terraform.io/browse/providers}{multi-cloud cohort} supported by \href{https://developer.hashicorp.com/terraform}{Terraform}
     \item \textbf{System Optimization \& Throughput:} Optimized core services to achieve an \textbf{improvement of 20x} in overall throughput by studying and refining SQL query execution plans, eliminating redundant network calls, implementing strategic caching layers etc. (w/ \href{https://www.linkedin.com/in/kinshuksingh/}{Kinshuk Singh})
     \item \textbf{High-Scale Data Migration:} Architected APIs to successfully execute the migration of 160M+ course-completion records from another major cloud provider to Azure (w/ \href{https://www.linkedin.com/in/nidhikothari92/}{Nidhi Kothari})
@@ -248,22 +248,24 @@ Engineering veteran with \textbf{8+ years of industry leading experience at Meta
     \item \textbf{National Social Impact:} Contributed to a high-scale social impact project that successfully trained and empowered over \textbf{110,000+ municipal functionaries} across \textbf{4,000+ cities} in India.
   \end{itemize}
 \vspace{2mm}
+\item \textbf{BCDR \& Global Traffic Management:} Designed and Implemented a mission-critical Business Continuity and Disaster Recovery architecture using \href{https://azure.microsoft.com/en-us/products/frontdoor}{Azure Front Door} (\href{https://www.linkedin.com/blog/engineering/scalability/linkedin-scales-edge-with-azure-front-door}{already benchmarked by LinkedIn}), significantly improving page-load latencies, establishing a resilient global load-balancing layer and hardening the platform’s security posture for massive-scale international traffic.
+\vspace{2mm}
 \item \textbf{Platform Localization}
 \begin{itemize}[label=\tiny$\circ$, leftmargin=1em, itemsep=1.0mm]
-    \item \textbf{Localization Leadership:} Engineered a scalable internal localization framework and integrated with company-wide frameworks for manual translation pipelines, eventually leading accessibility efforts across the entire platform, while keeping most of it extensible across Azure Global.
+    \item \textbf{Leadership:} Engineered a scalable internal localization framework and integrated with company-wide manual translation pipelines, eventually leading accessibility efforts across the entire platform, while keeping most of it extensible across Azure Global.
     \item \textbf{RTL \& Complex Scripts:} Delivered comprehensive right-to-left (RTL) format support and resolved complex ligature rendering, ensuring accurate typography across the platform.
     \item \textbf{Custom PDF Engine:} Architected a templatized HTML-to-PDF certification feature with strict security and localization constraints; partnered with IronPDF to significantly accelerate time-to-market.
     \item \textbf{Live Demonstration:} Presented RTL capabilities to a large audience, gracefully utilizing live product errors to demonstrate comprehensive, end-to-end localization coverage.
   \end{itemize}
 \vspace{2mm}
-\item \textbf{BCDR \& Global Traffic Management:} Designed and Implemented a mission-critical Business Continuity and Disaster Recovery architecture using \href{https://azure.microsoft.com/en-us/products/frontdoor}{Azure Front Door} (\href{https://www.linkedin.com/blog/engineering/scalability/linkedin-scales-edge-with-azure-front-door}{already benchmarked by LinkedIn}), significantly improving page-load latencies, establishing a resilient global load-balancing layer and hardening the platform’s security posture for massive-scale international traffic.
-\vspace{1mm}
-\item \textbf{Strategic Architectural Leadership:} Formally championed \href{https://learn.microsoft.com/en-us/azure/lighthouse/overview}{Azure Lighthouse} over Azure Managed Applications to resolve cross-tenant visibility constraints; authored deep-dive technical evaluations demonstrating how Lighthouse’s automation via Azure Marketplace would have accelerated time to market and eliminated multi-tenant architectural debt for \textbf{ALL of Azure Global}.
+\item \textbf{Strategic Architectural Leadership:} Formally championed \href{https://learn.microsoft.com/en-us/azure/lighthouse/overview}{Azure Lighthouse} over Azure Managed Applications to resolve cross-tenant visibility constraints; authored deep-dive technical evaluations demonstrating how Lighthouse’s automation via Azure Marketplace would have accelerated time to market and eliminated multi-tenant architectural debt for \textbf{all of Azure Global}.
 \vspace{1mm}
 \item \textbf{Identity \& Authentication:} Streamlined the SMS-based login flows (w/ \href{https://www.linkedin.com/in/saloni-chandak-46553454/}{Saloni Chandak}) by implementing custom Identity Server solutions over Azure Cosmos DB and collaborated with Telesign to significantly reduce SMS code-sending costs across many countries; Engineered workflows for load-testing authentication flows using locally signed JWT tokens.
-\item \textbf{Search Infrastructure \& Optimization:} Designed and implemented a custom search index featuring advanced schema optimizations and Lucene-based retrieval; Used Azure Cognitive skills to index relevant content from unstructured file formats like PDF, Office, Videos, Audios, etc. Used Azure Cognitive Search to improve search relevance with pretrained semantic analyzers like fuzzy matching, edit distance, synonyms, phonetics, etc.
+\item \textbf{Search Infrastructure \& Optimization:} Designed and implemented a custom search index featuring advanced schema optimizations and Lucene-based retrieval; Used Azure Cognitive skills to index relevant content from unstructured file formats like PDF, Office, Videos, Audios, etc. Used Azure Cognitive Search to improve search relevance with pretrained semantic analyzers like fuzzy matching, edit distance, synonyms, phonetics, etc. (w/ \href{https://www.linkedin.com/in/alok-agrawal-iima/}{Alok Agarwal})
 \vspace{1mm}
-\item \textbf{Media Security \& DRM:} Authored a technical proposal to modernize content protection for temporal media using industry-standard DRM protocols like Digital Rights Management including Widevine, PlayReady, and FairPlay beyond just AES-128 based encryption.
+\item \textbf{Media Processing \& DRM Security:} Resolved critical synchronization failures around state-tracking across video encoding workflows by diagnosing, implementing, and rigorously testing background cron-jobs orchestrating with Azure Media Services (w/ \href{https://www.linkedin.com/in/anchal-goyal-5096619b/}{Anchal Goyal}); Authored a technical proposal to modernize content protection for temporal media using industry-standard DRM protocols like Digital Rights Management including Widevine, PlayReady, and FairPlay beyond just AES-128 based encryption.
+\vspace{1mm}
+\item \textbf{Offline Content \& Sync Reliability:} Diagnosed and resolved critical offline content caching and learner progress synchronization issues within the Xamarin mobile application (w/ \href{https://www.linkedin.com/in/kulwinder-kaur-5064817a/}{Kulwinder Kaur})
 \vspace{1mm}
 \item \textbf{Notifications Infrastructure}: Onboarded by implementing client-side Xamarin APIs (w/ \href{https://scholar.google.com/citations?user=sk-qH8wAAAAJ&hl=en&oi=ao}{Rohan Badlani}) before leading the notification subsystem for the entire platform (w/ \href{https://www.linkedin.com/in/amangour/}{Aman Gour})
 \vspace{1mm}
@@ -271,29 +273,26 @@ Engineering veteran with \textbf{8+ years of industry leading experience at Meta
 \vspace{1mm}
 \item \textbf{Developed a scalable observability infrastructure} using Event Hubs and Azure Data Explorer to centralize telemetry and enable diagnostic and analytic dashboards (w/ \href{https://www.linkedin.com/in/deeksha-shravani-02b23b189/}{Deeksha Shravani})
 \vspace{1mm}
-\item \textbf{Automated end-to-end deployments and CI/CD pipelines} enabling Public Preview release of the offering on Azure's Marketplace (w/ \href{https://www.linkedin.com/in/sukhjeevan-reddy-214883103/}{Sukhjeevan Reddy})
+\item \textbf{Automated end-to-end deployments and CI/CD pipelines} enabling Public Preview release of the offering on Azure's Marketplace (w/ \href{https://www.linkedin.com/in/brianjmoore/}{Brian Moore} \& \href{https://www.linkedin.com/in/sukhjeevan-reddy-214883103/}{Sukhjeevan Reddy})
 \vspace{1mm}
-\item \textbf{Dependency Graph Optimization:} Identified and eliminated cyclic dependencies across interdependent .NET project references; decoupled shared assemblies and streamlined dependency graphs, reducing overall package-size footprint \textbf{by over 70\%} dramatically improving all downstream workflows (w/ \href{https://www.linkedin.com/in/cmayukh/}{Mayukh Chakraborty}).
+\item \textbf{Dependency Graph Optimization:} Identified and eliminated cyclic dependencies across interdependent .NET project references; decoupled shared assemblies and streamlined dependency graphs, reducing overall package-size footprint \textbf{by over 70\%}, dramatically improving downstream workflows like build and deployment runtimes and overall developer velocity. (w/ \href{https://www.linkedin.com/in/cmayukh/}{Mayukh Chakraborty})
 \vspace{1mm}
 \item \textbf{Advanced Thread Modeling:} Conducted deep-dive threat modeling and attack surface analysis using Microsoft internal security frameworks; ensuring the integrity of user data and platform content.
 \vspace{1mm}
 \item \textbf{Privacy \& Compliance:} Enabled automated compliance tooling to automate the identification of secure and compliant dependencies; ensuring rigorous adherence to global data protection and privacy standards.
 \vspace{1mm}
-\item \textbf{State Persistence \& User Analytics:} Developed features for real-time tracking of user progress, including "most recently viewed lesson" and "last watched timestamp" for temporal media content.
+\item \textbf{Analytics Architecture Revamp:} Authored a technical proposal outlining the addition of a pull-based analytics model and asynchronous workflows to resolve systemic data integrity bugs; drove foundational improvements by implementing the pull model and executing extensive query optimizations, significantly improving platform performance for learner workflows.
 \vspace{1mm}
-\item \textbf{Analytics Architecture Revamp:} Authored a technical proposal outlining the addition of a pull-based analytics model and asynchronous workflows to resolve systemic data integrity bugs; drove foundational improvements by implementing the pull model and executing extensive query optimizations, drastically improving platform performance for learner workflows.
+\item \textbf{Telemetry \& Growth Analytics:} Integrated Application Insights with advanced funneling to track end-to-end learner journeys from landing to completion; Configured a Dynamics 365 integration with Azure Marketplace to capture and generate targeted sales leads based on platform telemetry (w/ \href{https://www.linkedin.com/in/dmkxyz/}{Deepak Kathayat}) 
 \vspace{1mm}
-\item \textbf{User Retention Analytics:} Drove the comprehensive integration of Application Insights and implemented advanced funneling to map end-to-end learner journeys, accurately measuring conversion flows from the initial landing page through to course completion (w/ \href{https://www.linkedin.com/in/dmkxyz/}{Deepak Kathayat})
-\vspace{1mm}
-\item \textbf{Automated Lead Generation:} Configured a Dynamics 365 integration with Azure Marketplace to automatically capture and generate targeted sales leads based on platform telemetry.
-% \item \textbf{Delivered end-to-end features and bug fixes} spanning data layers, backend services, and frontend components.
+\item \textbf{State Persistence \& User Analytics:} Developed features for real-time tracking of user progress, including most-recently-viewed-lesson and last-watched-timestamp for temporal media content.
 \resumeItemListEnd
 \resumeSubheading
       {\Large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{MicrosoftLogo.png}}} \large{Microsoft Garage Hackathons}}{Hyderabad, Telangana, India}
       {Engineer}{June 2018 — October 2024}
 \resumeItemListStart
     \item \textbf{Azure Oracle:} Conceptualized a context-aware recommendation engine leveraging Change Analysis datasets to suggest next-best-actions for Azure cloud workflows.
-    \item \textbf{LLM Swagger Classification:} Co-engineered an AI pipeline automating the categorization of Azure Swagger properties (security, performance, cost)
+    \item \textbf{LLM Swagger Classification:} Contributed to an AI pipeline automating the categorization of Azure Swagger properties (security, performance, cost, etc.)
     \item \textbf{Kool AI(d) for Gamers:} Fine-tuned pre-trained computer vision models to extract real-time HUD metrics and game states from live Dota-2 streams; The collaborative team effort spanning around 100 individuals \href{https://www.linkedin.com/posts/avinash-agarwal95_im-happy-to-share-this-kool-ald-for-gamers-activity-7268599791155109888-HSt-?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABWJZ_sBE_eXkGyMdtycCf7TVs1e2l0iKmg}{secured 2nd place across the entire company.}
     \item \textbf{Koev Halev:} Actively contributed at the IDC campus, providing domain expertise in cross-functional design discussions for a holistic project focused on mental and emotional well-being.
     \item \textbf{Azure GreenOps:} Participated in a project championing the highlighting of carbon-efficient Azure SKUs to drive sustainable cloud provisioning.
@@ -312,7 +311,7 @@ Engineering veteran with \textbf{8+ years of industry leading experience at Meta
 \resumeSubheading
       {\Large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{GoldmanSachsLogo.png}}} \large{Goldman Sachs}}
       {Bengaluru, Karnataka, India}
-      {Software Engineering Lead}{September 2016 — October 2016}
+      {Engineering Lead}{September 2016 — October 2016}
 \resumeItemListStart
 \item \textbf{National Runner-Up (GS Quantify 2016):} Led a 3-member team in this flagship interdisciplinary event, serving as the primary contributor for the advanced algorithmic problem-solving track.
 \item \textbf{Data Science} (w/ \href{https://www.linkedin.com/in/samiksha-gupta-56046588/}{Samiksha Gupta}): Contributed to the data-science track for bond-liquidity-prediction.
@@ -321,7 +320,7 @@ Engineering veteran with \textbf{8+ years of industry leading experience at Meta
 \resumeItemListEnd
 \resumeSubheading
       {\Large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{MicrosoftLogo.png}}} \large{Microsoft Foundry}}{Hyderabad, Telangana, India}
-      {Software Engineering Internship (supervised by \href{https://www.linkedin.com/in/pankajisgarg/}{Pankaj Garg} \& \href{https://www.linkedin.com/in/saumyachandra/}{Saumya Chandra})}{May 2016 — July 2016}
+      {Engineering Internship (supervised by \href{https://www.linkedin.com/in/pankajisgarg/}{Pankaj Garg} \& \href{https://www.linkedin.com/in/saumyachandra/}{Saumya Chandra})}{May 2016 — July 2016}
 \resumeItemListStart
     \item \textbf{Conversational AI:} Engineered chat-bots using the \textbf{Microsoft Bot Framework}, architecting custom conversational flows for automated form-filling, within a cross-functional team.
     \item \textbf{Computer Vision:} Processed images using \textbf{OpenCV} to better highlight textual information, significantly improving downstream OCR engine performance.
@@ -370,12 +369,13 @@ Engineering veteran with \textbf{8+ years of industry leading experience at Meta
     \item \textbf{Tic-Tac-Toe AI:} Implemented a decision-tree based AI and multi-player for Tic-Tac-Toe; the computer being unbeatable in the hard difficulty level.
     \item \textbf{Intel E5200 CPU Overclocking}: Successfully \href{https://www.youtube.com/watch?v=HnGi9GVTVXo}{overclocked an Intel Pentium E5200 processor from a base clock of \textbf{2.5GHz} to \textbf{2.8GHz}}. Involved tuning \textbf{FSB frequencies, CPU multipliers, and voltage settings}; Benchmarked thermal output and system stability under peak loads.
     %\item \textbf{Rectifier:} 
+    %\item \textbf{Barometer:}
 \resumeItemListEnd
 
 \section{\Large{\textbf{Skills}}}
 \vspace{2mm}
 \resumeItemListStart
-    \item \textbf{Leadership} — Prioritization, Cross-functional collaboration, Reviews, etc.
+    \item \textbf{Leadership} — Prioritization, Cross-Functional collaboration, Reviews, etc.
     \item \textbf{Engineering} — Data Structures and Algorithms, Distributed Systems and High Performance Computing (Billions of daily notifications), Data Pipelines, Authentication and Identity Systems, Blockchain, API design and Smart Contracts, IaaC, etc.
     \item \textbf{Data \& Storage} — Redis, NoSQL, SQL, Blockchain, etc. 
     \item \textbf{Cloud \& Infrastructure} — Microsoft Azure (Expert), AWS, Kubernetes, CDN, CI/CD, Automation, etc.
@@ -396,7 +396,7 @@ Engineering veteran with \textbf{8+ years of industry leading experience at Meta
 \resumeSubHeadingListStart
 \resumeSubheading
 {\huge{\raisebox{-0.2em}{\includegraphics[height=1.0em]{IITBHULogo.jpg}}} \large{Indian Institute of Technology (Banaras Hindu University)}} {Varanasi, Uttar Pradesh, India}
-{Integrated Master's degree (5 years): Mathematics \& Computing}{July 2013 - May 2018}
+{Integrated Master's degree (5 years): Mathematics \& Computing}{July 2013 — May 2018}
 \resumeItemListStart
 \item \textbf{Thesis:} Deep Learning based Classification of Handwritten Mathematical Symbols. \newline 
 (supervised by \href{https://scholar.google.com/citations?user=ZVw1nywAAAAJ&hl=en}{Tanmoy Som})
@@ -440,8 +440,9 @@ Engineering veteran with \textbf{8+ years of industry leading experience at Meta
 \item \textbf{DeepLearning.AI:} \href{https://coursera.org/share/46f4e12ebf1c332171be59623a010c6c}{Generative AI For Software Development}
 \resumeItemListEnd
 
+\phantomsection\label{sec:fiitjee}
 \resumeSubheading
-{\large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{FIITJEELogo.png}}} \large{Forum for IIT-JEE} \label{sec:FIITJEE}} {Dhanbad, Jharkhand, India}
+{\large{\raisebox{-0.2em}{\includegraphics[height=1.0em]{FIITJEELogo.png}}} \large{Forum for IIT-JEE}} {Dhanbad, Jharkhand, India}
 {Joint Entrance Examination}{April 2011 — June 2013}
 \resumeItemListStart
     \item \textbf{All India Rank 494} in Joint Entrance Examination — 2013, among 1.3 million candidates.
@@ -467,8 +468,8 @@ Engineering veteran with \textbf{8+ years of industry leading experience at Meta
 {\huge{\raisebox{-0.3em}{\includegraphics[height=1.0em]{DeNobiliSchoolLogo.jpg}}} \large{De Nobili School, Sijua}} {Dhanbad, Jharkhand, India}
 {Indian Certificate of Secondary Education}{March 2000 — March 2011}
 \resumeItemListStart
-    \item \hyperref[sec:FIITJEE]{\textbf{Received 90\%+ in FTRE Scholarship}} based on competitive national-level performance among 100,000+ candidates!
-    \item \textbf{Scored 87.9 \%} in the Indian Certificate of Secondary Education — 2011 examination.
+    \item \hyperref[sec:fiitjee]{\textbf{Received 90\%+ in FTRE Scholarship}} based on competitive national-level performance among 100,000+ candidates!
+    \item \textbf{Scored 87.9\%} in the Indian Certificate of Secondary Education — 2011 examination.
     \item \textbf{Practicals:} Reading, Speaking, Writing, Physical-Training, Art \& Craft, Computers, Chemistry, Biology, Physics, Topology, etc.
     \resumeItemListEnd
 \resumeSubHeadingListEnd
@@ -507,14 +508,4 @@ Engineering veteran with \textbf{8+ years of industry leading experience at Meta
     % Man vs Wild
     % Ancient Aliens
 \resumeItemListEnd
-
-% \section{\Large\textbf{Personal}}
-% \vspace{2mm}
-% \resumeItemListStart
-%     \item Parul Aggarwal
-%     \item Akash Agarwal
-%     \item Sangeeta Jiloka
-%     \item Raj Kumar Agarwal
-% \resumeItemListEnd
-
 \end{document}
